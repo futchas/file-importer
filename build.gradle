@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.futchas.fileimporter'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.1'
+    testCompile("org.assertj:assertj-core:3.11.1")
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.23.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
